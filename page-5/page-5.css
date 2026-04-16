@@ -1,0 +1,111 @@
+
+    * { margin: 0; 
+        padding: 0;
+         box-sizing: border-box; }
+
+    body {
+      background: #e8e8e8;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+      color: #333;
+      letter-spacing: 1px;
+    }
+
+    .contenedor {
+      width: 600px;
+    }
+
+    .naranja { background-color: #FF8000; }
+    .verde   { background-color: #007272; }
+    .marron  { background-color: #6B0030; }
+
+    .cuadricula1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 200px;
+      grid-template-areas: "izquierda centro derecha";
+      gap: 6px;
+    }
+    .izquierda { grid-area: izquierda; }
+    .centro    { grid-area: centro;    }
+    .derecha   { grid-area: derecha;   }
+
+    .cuadricula2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 70px 115px 115px;
+      grid-template-areas:
+        "superior-izq superior-cen superior-der"
+        "medio-izq    medio-cen    medio-der"
+        "medio-izq    inferior-cen medio-der";
+      gap: 6px;
+    }
+    .superior-izq { grid-area: superior-izq; }
+    .superior-cen { grid-area: superior-cen; }
+    .superior-der { grid-area: superior-der; }
+    .medio-izq    { grid-area: medio-izq;    }
+    .medio-cen    { grid-area: medio-cen;    }
+    .medio-der    { grid-area: medio-der;    }
+    .inferior-cen { grid-area: inferior-cen; }
+
+    .cuadricula3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 80px 120px 80px;
+      grid-template-areas:
+        "col-izq fila-sup col-der"
+        "col-izq col-cen  col-der"
+        "fil-inf col-cen  fil-der";
+      gap: 6px;
+    }
+    .col-izq  { grid-area: col-izq;  }
+    .fila-sup { grid-area: fila-sup; }
+    .col-der  { grid-area: col-der;  }
+    .fil-inf  { grid-area: fil-inf;  }
+    .col-cen  { grid-area: col-cen;  }
+    .fil-der  { grid-area: fil-der;  }
+
+    .cuadricula4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-areas:
+        "fila1-ancha fila1-ancha fila1-chica"
+        "fila2-chica fila2-ancha fila2-ancha"
+        "fila3-ancha fila3-ancha fila3-chica";
+      gap: 6px;
+    }
+    .fila1-ancha { grid-area: fila1-ancha; }
+    .fila1-chica { grid-area: fila1-chica; }
+    .fila2-chica { grid-area: fila2-chica; }
+    .fila2-ancha { grid-area: fila2-ancha; }
+    .fila3-ancha { grid-area: fila3-ancha; }
+    .fila3-chica { grid-area: fila3-chica; }
+
+    .cuadricula5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 100px 100px 100px;
+      grid-template-areas:
+        "celda1 celda2 celda3"
+        "celda4 celda5 celda6"
+        "celda7 celda8 celda9";
+      gap: 6px;
+    }
+    .celda1 { grid-area: celda1; }
+    .celda2 { grid-area: celda2; }
+    .celda3 { grid-area: celda3; }
+    .celda4 { grid-area: celda4; }
+    .celda5 { grid-area: celda5; }
+    .celda6 { grid-area: celda6; }
+    .celda7 { grid-area: celda7; }
+    .celda8 { grid-area: celda8; }
+    .celda9 { grid-area: celda9; }
